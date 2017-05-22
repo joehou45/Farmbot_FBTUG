@@ -1,14 +1,13 @@
-=============FBTUG================
 Add F01/F02/Servo command
+==========================
 1. Add F01 handle --Dose amount of water using time in millisecond
    EX: "F01 T1000\n" :  Watering 1000ms and stop.
 2. Add F02 handle --Dose amount of water using flow meter that measures pulses
    EX: "F02 N1000\n" : Watering 1000ml and stop.
 3. Add Sevro pin4 support for water switch
    EX: "F61 P4 V45\n"   -- turn servo to angle 45
-=============FBTUG================
 
-//
+==========================
 farmbot-arduino-controller
 ==========================
 This software is responsible for receiving G-Codes from the Raspberry Pi, executing them, and reporting back the results.
