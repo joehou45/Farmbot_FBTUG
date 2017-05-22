@@ -38,6 +38,7 @@ void pulse() {
     detachInterrupt(WATER_FLOW_INT);
     PinControl::getInstance()->writeValue(WATER_PIN, DISABLE, DIGITAL);
     StartWatering = false;
+    WaterFlow = 0;
   }
 }
 
