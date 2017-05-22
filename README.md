@@ -1,3 +1,14 @@
+=============FBTUG================
+Add F01/F02/Servo command
+1. Add F01 handle --Dose amount of water using time in millisecond
+   EX: "F01 T1000\n" :  Watering 1000ms and stop.
+2. Add F02 handle --Dose amount of water using flow meter that measures pulses
+   EX: "F02 N1000\n" : Watering 1000ml and stop.
+3. Add Sevro pin4 support for water switch
+   EX: "F61 P4 V45\n"   -- turn servo to angle 45
+=============FBTUG================
+
+//
 farmbot-arduino-controller
 ==========================
 This software is responsible for receiving G-Codes from the Raspberry Pi, executing them, and reporting back the results.
@@ -116,7 +127,7 @@ Z_ENCDR_B        |  29  | Z axis encoder B channel
 Z_ENCDR_A_Q      |  39  | Z axis encoder A channel for quarature (not implemented)
 Z_ENCDR_B_Q      |  41  | Z axis encoder B channel for quarature (not implemented)
 LED_PIN          |  13  | on board LED
-FAN_PIN          |   9  | RAMPS board fan pin
+WATER_PIN        |   9  | RAMPS board Water pin
 HEATER_0_PIN     |  10  | RAMPS board heating pin 0
 HEATER_1_PIN     |   8  | RAMPS board heating pin 1
 SERVO_0_PIN	     |   4  | Servo motor 0 signal pin
@@ -134,8 +145,8 @@ G        |00    |X Y Z S   |Move to location at given speed for axis (don't have
 G        |01    |X Y Z S   |Move to location on a straight line
 G        |28    |          |Move home all axis
 F        |      |          |Farm commands, commands specially added for the farmbot
-F        |01    |T         |Dose amount of water using time in millisecond
-F        |02    |N         |Dose amount of water using flow meter that measures pulses
+F        |01    |T         |Dose amount of water using time in millisecond  (ms)
+F        |02    |N         |Dose amount of water using flow meter that measures pulses (ml)
 F        |11    |          |Home X axis
 F        |12    |          |Home Y axis
 F        |13    |          |Home Z axis
