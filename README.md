@@ -1,3 +1,8 @@
+Modify F01 command by Joe Hou
+==========================
+1. Modify F01 handle -- N (ml): control water flow by time
+
+
 Add F01/F02/Servo command by Joe Hou
 ==========================
 1. Add F01 handle --Dose amount of water using time in millisecond
@@ -325,7 +330,7 @@ ID   | Name
 222  | PIN_GUARD_5_TIME_OUT
 223  | PIN_GUARD_5_ACTIVE_STATE
 300  | WATER_FLOW_COUNTS
-
+301  | WATER_FLOW_TIME_RATIO
 
 IMPORTANT
 =========
