@@ -10,7 +10,7 @@
 const int PARAM_NR_OF_PARAMS = 350;
 
 //
-// Index of EEPROM 
+// Index of EEPROM
 //
 
 enum ParamListEnum
@@ -127,7 +127,8 @@ enum ParamListEnum
   //
   // counts of square waves
   //
-  WATER_FLOW_COUNTS = 300
+  WATER_FLOW_COUNTS = 300,
+  WATER_FLOW_TIME_RATIO = 301
 };
 
 /*
