@@ -150,7 +150,7 @@ G        |00    |X Y Z S   |Move to location at given speed for axis (don't have
 G        |01    |X Y Z S   |Move to location on a straight line
 G        |28    |          |Move home all axis
 F        |      |          |Farm commands, commands specially added for the farmbot
-F        |01    |T         |Dose amount of water using time in millisecond  (ms)
+F        |01    |T  N      |Dose amount of water using time in millisecond  (ms/ml) -- Ex: T100 ms, N100 ml
 F        |02    |N         |Dose amount of water using flow meter that measures pulses (ml)
 F        |11    |          |Home X axis
 F        |12    |          |Home Y axis
