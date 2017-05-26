@@ -1,10 +1,9 @@
 Add F01/F02/Servo command by Joe Hou
 ==========================
-
 Modify F01 handle -- support two commands (T & N)
- Ex:
-   "F01 N200\n" :  Watering 200ml and stop.
-    "F01 T200\n" :  Watering 200ms and stop.
+Ex:
+"F01 N200\n" :  Watering 200ml and stop.
+"F01 T200\n" :  Watering 200ms and stop.
 
 Add F01/F02/Servo command by Joe Hou
 ==========================
