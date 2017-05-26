@@ -8,13 +8,18 @@ Ex:
 Add F01/F02/Servo command by Joe Hou
 ==========================
 1. Add F01 handle --Dose amount of water using time in millisecond
-   EX: "F01 T1000\n" :  Watering 1000ms and stop.
+EX: "F01 T1000\n" :  Watering 1000ms and stop.
+
 2. Add F02 handle --Dose amount of water using flow meter that measures pulses
-   EX: "F02 N1000\n" : Watering 1000ml and stop.
+EX: "F02 N1000\n" : Watering 1000ml and stop.
+
 3. Add Sevro pin4 support for water switch
-   EX: "F61 P4 V45\n"   -- turn servo to angle 45
+EX: "F61 P4 V45\n"   -- turn servo to angle 45
 
+4. Pin20 for Water flow meter
 
+5. Change the default clocks of flow meter from EEPROM write command
+Ex: "F21 P300 V5890" -- P300 is index of the default, change the clocks to 5890.
 
 farmbot-arduino-controller
 ==========================
